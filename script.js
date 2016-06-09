@@ -1,4 +1,4 @@
-var clicks = 0; 
+var clicks = 0;
 var firstchoice;
 var secondchoice;
 
@@ -35,16 +35,46 @@ var faces = [
 ]
 
 function hide(){
-  $('.reset').hide();
-  $('.cardMatrixContainer').hide();
+  $('.resetBtn').hide();
+  $("#easyDiv").hide();
+  $("#mediumDiv").hide();
+  $("#hardDiv").hide();
+  $('.contentContainer').hide();
 }
 
 hide();
 
-$(".play").click(function(){
+$(".easyBtn").click(function(){
   $(".play").hide();
-  $('.cardMatrixContainer').show();
-  $('.reset').show();
+  $(".easyBtn").hide();
+  $(".mediumBtn").hide();
+  $(".hardBtn").hide();
+  $('.contentContainer').show();
+  $('#easyDiv').show();
+  $('.resetBtn').show();
+});
+
+$(".mediumBtn").click(function(){
+  $(".play").hide();
+  $(".easyBtn").hide();
+  $(".mediumBtn").hide();
+  $(".hardBtn").hide();
+  $('.contentContainer').show();
+  $('#easyDiv').show();
+  $('#mediumDiv').show();
+  $('.resetBtn').show();
+});
+
+$(".hardBtn").click(function(){
+  $(".play").hide();
+  $(".easyBtn").hide();
+  $(".mediumBtn").hide();
+  $(".hardBtn").hide();
+  $('.contentContainer').show();
+  $('#easyDiv').show();
+  $('#mediumDiv').show();
+  $('#hardDiv').show();
+  $('.resetBtn').show();
 });
 
 function shuffle(a) {
