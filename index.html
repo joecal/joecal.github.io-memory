@@ -1,98 +1,69 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
+
+<head>
     <meta charset="utf-8">
-    <title> MEMORY </title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>MEMORY</title>
+</head>
 
 <body>
 
-  <span class="play btn">Play Memory</span>
+    <button class="play btn">Play Memory</button>
+    <!--
+      <br>
+      <button class="easy btn">Easy</button>
+      <br>
+      <button class="medium btn">Medium</button>
+      <br>
+      <button class="hard btn">Hard</button>
+    -->
 
-  <!-- <br>
+    <div class="cardMatrixContainer">
+        <h1>MEMORY</h1>
 
-  <span class="easy btn">Easy</span>
+        <div id="card-0" class="card"><img src="#" /></div>
+        <div id="card-1" class="card"><img src="#" /></div>
+        <div id="card-2" class="card"><img src="#" /></div>
+        <div id="card-3" class="card"><img src="#" /></div>
+        <div id="card-4" class="card"><img src="#" /></div>
+        <div id="card-5" class="card"><img src="#" /></div>
+        <div id="card-6" class="card"><img src="#" /></div>
+        <div id="card-7" class="card"><img src="#" /></div>
 
-  <br>
+        <br>
 
-  <span class="medium btn">Medium</span>
+        <div id="card-8" class="card"><img src="#" /></div>
+        <div id="card-9" class="card"><img src="#" /></div>
+        <div id="card-10" class="card"><img src="#" /></div>
+        <div id="card-11" class="card"><img src="#" /></div>
+        <div id="card-12" class="card"><img src="#" /></div>
+        <div id="card-13" class="card"><img src="#" /></div>
+        <div id="card-14" class="card"><img src="#" /></div>
+        <div id="card-15" class="card"><img src="#" /></div>
 
-  <br>
+        <br>
 
-  <span class="hard btn">Hard</span> -->
+        <div id="card-16" class="card"><img src="#" /></div>
+        <div id="card-17" class="card"><img src="#" /></div>
+        <div id="card-18" class="card"><img src="#" /></div>
+        <div id="card-19" class="card"><img src="#" /></div>
+        <div id="card-20" class="card"><img src="#" /></div>
+        <div id="card-21" class="card"><img src="#" /></div>
+        <div id="card-22" class="card"><img src="#" /></div>
+        <div id="card-23" class="card"><img src="#" /></div>
 
-  <div class='cardMatrixContainer'>
-    <h1>MEMORY</h1>
+        <br>
 
-    <!-- <div id='easy'> -->
-      <a href="javascript:choose(0)"><img src="images/black_joker.png" width=62px height=90px/></a>
+        <p>MATCHES <span id="matches">0</span></p>
 
-      <a href="javascript:choose(1)"><img src="images/black_joker.png" width=62px height=90px/></a>
+        <button class="reset btn">Reset</button>
+    </div>
 
-      <a href="javascript:choose(2)"><img src="images/black_joker.png" width=62px height=90px/></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
-      <a href="javascript:choose(3)"><img src="images/black_joker.png" width=62px height=90px/></a>
+</body>
 
-      <a href="javascript:choose(4)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(5)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(6)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(7)"><img src="images/black_joker.png" width=62px height=90px/></a>
-    <!-- </div> -->
-
-    <br>
-
-    <!-- <div id='medium'> -->
-      <a href="javascript:choose(8)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(9)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(10)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(11)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(12)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(13)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(14)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(15)"><img src="images/black_joker.png" width=62px height=90px/></a>
-    <!-- </div> -->
-
-    <br>
-
-    <!-- <div id='hard'> -->
-      <a href="javascript:choose(16)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(17)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(18)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(19)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(20)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(21)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(22)"><img src="images/black_joker.png" width=62px height=90px/></a>
-
-      <a href="javascript:choose(23)"><img src="images/black_joker.png" width=62px height=90px/></a>
-    <!-- </div> -->
-
-    <br>
-
-    <p> MATCHES </p>
-    <p id="matches"> 0 </p>
-  </div>
-
-  <span class="reset btn" onClick="window.location.reload()">Reset</span>
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <script src="script.js"></script>
-
-  </body>
 </html>
